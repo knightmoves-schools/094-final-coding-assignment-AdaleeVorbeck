@@ -1,4 +1,49 @@
 <!DOCTYPE html>
 <html>
+    <style>
+
+    </style>
+    
+    <body>
     <!--Put your code here-->
+        <div id="flowers">
+            <div id="peony">
+                <h3>Peony $2</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_G7W2anncLxMA1iQU7ANgLIjFGS2H1mNNWA&s" alt="peonyImage">
+                <button id="addPeony">Add</button>
+            </div>
+
+            <br>
+
+            <div id="anemone">
+                <h3>Anemone $4</h3>
+                <img src="data:image/jpeg;base64,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" alt="anemoneImage">
+                <button id="addAnemone">Add</button>
+            </div>
+
+            <br>
+
+            <div id="daffodil">
+                <h3>Daffodil $3</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHKdXl81vnfuk4ilHrUW7uk1jPzUfn9iTMhA&s" alt="daffokilImage">
+                <button id="addDaffodil">Add</button>
+                </div>
+            </div>
+
+            <div id="link">
+                <p>
+                    Click
+                    <a href="https://www.marthastewart.com/flowers-to-plant-in-spring-8572528" target="_blank">here</a>
+                    to view more flowers.
+                </p>
+        </div>
+    </body>
 </html>
+
+
+should have three items listed on the left side of the screen, each with an "Add" button.
+
+should add the item's name and price to the shopping cart on the right side when the Add button is clicked
+should display the total amount
+should incorporate at least 5 CSS styles of your choice (Be creative)
+
