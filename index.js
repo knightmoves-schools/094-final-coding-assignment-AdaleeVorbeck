@@ -2,16 +2,19 @@
 let peonyCount = 0;
 let anemoneCount = 0;
 let daffodilCount = 0;
+let roseCount = 0;
 
 const peonyPrice = 2;
 const anemonePrice = 4;
 const daffodilPrice = 3;
+const rosePrice = 50;
 let totalPrice = 0;
 
 function updateDisplay() {
     document.getElementById("result").textContent = totalPrice;
     document.getElementById("totalPeonys").textContent = peonyCount;
     document.getElementById("totalAnemones").textContent = anemoneCount;
+    document.getElementById("totalRoses").textContent = roseCount;
     document.getElementById("totalDaffodils").textContent = daffodilCount;
 }
 
@@ -33,6 +36,15 @@ if (addAnemoneBtn) {
     });
 }
 
+const addRoseBtn = document.getElementById("addRose");
+if (addRoseBtn) {
+    addRoseBtn.addEventListener("click", () => {
+        roseCount += 1;
+        totalPrice += rosePrice;
+        updateDisplay();
+    });
+}
+
 const addDaffodilBtn = document.getElementById("addDaffodil");
 if (addDaffodilBtn) {
     addDaffodilBtn.addEventListener("click", () => {
@@ -44,6 +56,5 @@ if (addDaffodilBtn) {
 
 
 
-// initialize displayed values
 updateDisplay();
 
