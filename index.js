@@ -1,3 +1,4 @@
+let colors = ["grey", "blue"]; 
 
 let peonyCount = 0;
 let anemoneCount = 0;
@@ -54,7 +55,10 @@ if (addDaffodilBtn) {
     });
 }
 
-
+function toggleClass() {
+    document.body.classList.toggle("nightmode");
+    
+}
 
 updateDisplay();
 

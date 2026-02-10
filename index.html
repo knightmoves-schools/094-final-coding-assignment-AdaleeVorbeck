@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <style>
+        body.nightmode {
+            background-color: gray , blue;
+        }
+
+        
+
         #container {
             position:absolute
         }
@@ -9,6 +15,22 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
             font-size: 50px;
+        }
+
+        #addPeony {
+            background-color:blue
+        }
+
+        #addAnemone {
+            background-color:blue
+        }
+
+        #addRose {
+            background-color:blue
+        }
+
+        #addDaffodil {
+            background-color:blue
         }
 
         .item1 {
@@ -78,7 +100,7 @@
         <link class="favicon" rel="icon" type="image/png" href="https://silksareforever.com/cdn/shop/files/LFA800-MX_f9d73bf7-3868-4c82-ae95-7bca33a03337_875x875.jpg?v=1757549662">
     </head>
     
-    <body style = "color:red">
+    <body id="body" style = "color: rgb(255, 0, 0)">
     <!--Put your code here-->
 
         <h1 class="title">Flower Shop</h1>
@@ -164,6 +186,10 @@
                     <a href="https://www.marthastewart.com/flowers-to-plant-in-spring-8572528" target="_blank">here</a>
                     to view more flowers.
                 </p>
+            </div>
+
+            <div id="coconut">
+                <button onclick="toggleClass()" id="nightModeBtn">Toggle Night Mode</button>
             </div>
 
         <div>
